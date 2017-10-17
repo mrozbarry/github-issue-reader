@@ -1,8 +1,25 @@
 ## Getting started
 
+### Prerequisites
+
+ - Install [nvm](https://github.com/creationix/nvm) for node version management. You might be able to alternatively use [nvm-windows](https://github.com/coreybutler/nvm-windows) on Windows systems.
+
+### Installing dependencies
+
+```bash
+nvm install
+nvm use
+npm install
+```
+
+ - `nvm install` will download/install the correct version of node if it has not been installed previously. You probably only need to do this once.
+ - `nvm use` will set up your environment to use the correct node and npm versions. You will only need to do this when you navigate to this directory in your terminal.
+ - `npm install` will install all the application dependencies. You will need to do this when updating this repository on your system.
+
+
 ### Authentication
 
-If you are reading issues from a public repo, you can probably skip this, but you will face a lower rate limit if you authenticate
+If you are reading issues from a public repo, you can probably skip this, but you will get a better rate limit if you authenticate.
 
 To authenticate, create a new file in this directory `account.json` - you can copy `account.json.example` as a starter.
 
@@ -39,6 +56,7 @@ Your account.json file should look like:
 ## Run it
 
 ```
+nvm use
 node index.js
 ```
 
